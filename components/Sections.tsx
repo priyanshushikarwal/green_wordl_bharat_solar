@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { FAQS, SERVICE_AREAS, PROJECTS } from '../constants';
+import { OptimizedImage } from './OptimizedImage';
 
 export const Solutions: React.FC = () => (
   <section id="solutions" className="py-24 relative overflow-hidden">
@@ -36,7 +36,13 @@ export const Solutions: React.FC = () => (
         ].map((item, idx) => (
           <div key={idx} className="group glass rounded-3xl overflow-hidden hover:shadow-2xl transition-all border border-white/50 transform hover:-translate-y-2">
             <div className="h-56 overflow-hidden">
-              <img src={item.img} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <OptimizedImage
+                src={item.img}
+                alt={item.alt}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                width={400}
+                height={224}
+              />
             </div>
             <div className="p-8">
               <h3 className="text-xl font-bold mb-4">{item.title}</h3>
@@ -68,15 +74,17 @@ export const ProjectsSection: React.FC = () => (
           <button className="glass px-6 py-2 rounded-full font-bold text-sm text-emerald-700">View All Installations</button>
         </div>
       </div>
-      
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {PROJECTS.map((project, idx) => (
           <div key={idx} className="group glass rounded-[32px] overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
             <div className="relative h-64 overflow-hidden">
-              <img 
-                src={project.image} 
-                alt={project.alt} 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+              <OptimizedImage
+                src={project.image}
+                alt={project.alt}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                width={400}
+                height={256}
               />
               <div className="absolute top-4 right-4 glass px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-emerald-800">
                 {project.category}
@@ -111,10 +119,12 @@ export const RooftopSection: React.FC = () => (
     <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
       <div className="order-2 lg:order-1 relative">
         <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-200/30 rounded-full blur-3xl"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80&w=800" 
-          alt="Best rooftop solar panel installation company jaipur" 
+        <OptimizedImage
+          src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80&w=800"
+          alt="Best rooftop solar panel installation company jaipur"
           className="rounded-[48px] shadow-2xl relative z-10"
+          width={600}
+          height={400}
         />
         <div className="absolute -bottom-8 -right-8 glass p-6 rounded-3xl z-20 shadow-xl max-w-xs">
           <p className="text-xs font-bold text-emerald-700 mb-1 uppercase tracking-widest">Client Spotlight</p>
@@ -234,10 +244,22 @@ export const AreasAndFaq: React.FC = () => (
               Industrial Estate, Mansarovar, Jaipur<br />
               Rajasthan 302020
             </address>
-            <a href="tel:+911234567890" className="bg-white text-emerald-600 px-6 py-3 rounded-xl font-bold text-sm shadow-sm hover:shadow-md transition-all inline-block border border-emerald-100">Call: +91 141-XXXXXXX</a>
+            <div className="rounded-2xl overflow-hidden mb-6 h-48 w-full shadow-inner border border-emerald-100">
+              <iframe
+                title="Green World Bharat Solar Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8772839141!2d75.7672!3d26.8437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5f9a6a6a6a7%3A0x1234567890abcdef!2sMansarovar%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1625000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <a href="tel:+919352513913" className="bg-white text-emerald-600 px-6 py-3 rounded-xl font-bold text-sm shadow-sm hover:shadow-md transition-all inline-block border border-emerald-100">Call: +91 93525 13913</a>
           </div>
         </div>
-        
+
         <div>
           <h2 className="text-3xl font-bold mb-10 tracking-tight">Solar in Jaipur: Frequently Asked Questions</h2>
           <div className="space-y-4">

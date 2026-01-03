@@ -25,7 +25,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "Sitapura Industrial Mega-Project",
     location: "Sitapura Industrial Area, Jaipur",
     capacity: "1.2 MW",
-    image: "https://images.unsplash.com/photo-1509391366360-feaf9fa44852?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=800",
     alt: "1.2MW Industrial solar installation in Sitapura, Jaipur by Green World Bharat Solar",
     category: "Industrial"
   },
@@ -33,7 +33,7 @@ export const PROJECTS: ProjectItem[] = [
     title: "Malviya Nagar Commercial Hub",
     location: "Malviya Nagar, Jaipur",
     capacity: "450 kW",
-    image: "https://images.unsplash.com/photo-1545259742-b4fe8fea3ff1?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?auto=format&fit=crop&q=80&w=800",
     alt: "Commercial rooftop solar in Malviya Nagar Jaipur",
     category: "Commercial"
   },

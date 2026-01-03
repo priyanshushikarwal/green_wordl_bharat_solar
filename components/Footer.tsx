@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { OptimizedImage } from './OptimizedImage';
 
 export const Footer: React.FC = () => {
   return (
@@ -11,29 +11,39 @@ export const Footer: React.FC = () => {
             Join 500+ businesses and homeowners who trust us for engineering-first solar installations.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-emerald-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200">
+            <a
+              href="https://wa.me/919352513913?text=Hi%2C%20I%20am%20interested%20in%20a%20free%20solar%20site%20audit%20in%20Jaipur."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-emerald-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200 inline-block"
+            >
               Request Your Free Audit
-            </button>
-            <button className="bg-[#1D1D1F] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all">
+            </a>
+            <a
+              href="tel:+919352513913"
+              className="bg-[#1D1D1F] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all inline-block"
+            >
               Contact Us Today
-            </button>
+            </a>
           </div>
         </div>
 
         <div className="grid md:grid-cols-4 gap-12 py-12 border-t border-gray-100">
           <div className="col-span-1 md:col-span-1">
             <div className="flex flex-col gap-6 mb-6">
-              <img 
-                src="logo.png" 
-                alt="Green World Bharat Solar - Best Solar Company in Jaipur" 
+              <OptimizedImage
+                src="/logo.png"
+                alt="Green World Bharat Solar - Best Solar Company in Jaipur"
                 className="h-16 w-auto object-contain self-start"
+                width={64}
+                height={64}
               />
               <p className="text-sm text-[#86868B] leading-relaxed">
                 <strong>Green World Bharat Solar</strong> is a premier solar EPC company based in Jaipur, Rajasthan. Government approved, MNRE certified, and engineering-driven.
               </p>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-bold mb-6 text-[#1D1D1F]">Solar Solutions</h4>
             <ul className="space-y-4 text-sm text-[#86868B]">

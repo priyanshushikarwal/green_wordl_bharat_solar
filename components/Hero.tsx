@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { OptimizedImage } from './OptimizedImage';
 
 export const Hero: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
       {/* Background Glass Shapes */}
       <div className="absolute top-1/4 -left-20 w-72 h-72 bg-emerald-300/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-xs font-semibold mb-8 text-emerald-800 border-emerald-100/50">
@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
           <p className="text-xl text-[#4b5563] mb-10 leading-relaxed max-w-xl">
             Empowering Jaipur with engineering-first solar installations. As the premier solar company in Jaipur, we specialize in high-efficiency commercial and industrial energy systems.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 mb-6">
             <button className="bg-emerald-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200/50 transform hover:-translate-y-1">
               Free Site Assessment in Jaipur
             </button>
@@ -31,6 +31,12 @@ export const Hero: React.FC = () => {
               Request Commercial Proposal
             </button>
           </div>
+          <p className="text-sm font-bold text-emerald-700 mb-12 flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-100 text-emerald-600">
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
+            </span>
+            Govt. Subsidy Available: Get up to ₹78,000 off on Residential Solar
+          </p>
           <div className="flex items-center gap-10">
             <div className="flex flex-col">
               <span className="text-3xl font-bold text-[#1D1D1F]">15MW+</span>
@@ -46,10 +52,13 @@ export const Hero: React.FC = () => {
         <div className="relative">
           <div className="glass p-4 rounded-[40px] transform rotate-3 hover:rotate-0 transition-transform duration-700">
             <div className="rounded-[32px] overflow-hidden shadow-2xl aspect-[4/5]">
-              <img 
-                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800" 
+              <OptimizedImage
+                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800"
                 alt="Best solar company in jaipur commercial installation"
                 className="w-full h-full object-cover"
+                priority
+                width={600}
+                height={750}
               />
             </div>
           </div>
