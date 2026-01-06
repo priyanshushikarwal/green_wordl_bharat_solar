@@ -120,7 +120,7 @@ export const RooftopSection: React.FC = () => (
       <div className="order-2 lg:order-1 relative">
         <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-200/30 rounded-full blur-3xl"></div>
         <OptimizedImage
-          src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80&w=800"
+          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800"
           alt="Best rooftop solar panel installation company jaipur"
           className="rounded-[48px] shadow-2xl relative z-10"
           width={600}
