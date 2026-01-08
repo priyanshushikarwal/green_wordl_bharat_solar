@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Footer } from './components/Footer';
@@ -66,6 +67,7 @@ const App: React.FC = () => {
           </Suspense>
         </main>
         <Footer />
+        <Analytics />
       </div>
     </ErrorBoundary>
   );
