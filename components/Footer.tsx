@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { OptimizedImage } from './OptimizedImage';
 
 export const Footer: React.FC = () => {
@@ -47,30 +48,30 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-[#1D1D1F]">Solar Solutions</h4>
             <ul className="space-y-4 text-sm text-[#86868B]">
-              <li><a href="#solutions" className="hover:text-emerald-600 transition-colors">Commercial Solar Jaipur</a></li>
-              <li><a href="#solutions" className="hover:text-emerald-600 transition-colors">Industrial Solar Solutions</a></li>
-              <li><a href="#rooftop" className="hover:text-emerald-600 transition-colors">On-Grid Solar Systems</a></li>
-              <li><a href="#rooftop" className="hover:text-emerald-600 transition-colors">Off-Grid Solar Jaipur</a></li>
+              <li><Link to="/residential-solar-jaipur" className="hover:text-emerald-600 transition-colors">Residential Solar Jaipur</Link></li>
+              <li><Link to="/commercial-solar-jaipur" className="hover:text-emerald-600 transition-colors">Commercial Solar Jaipur</Link></li>
+              <li><Link to="/solar-panel-price-jaipur" className="hover:text-emerald-600 transition-colors">Solar Panel Prices</Link></li>
+              <li><Link to="/solar-subsidy-rajasthan" className="hover:text-emerald-600 transition-colors">Govt Subsidy Info</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-6 text-[#1D1D1F]">Company</h4>
             <ul className="space-y-4 text-sm text-[#86868B]">
-              <li><a href="#" className="hover:text-emerald-600 transition-colors">About Our Expertise</a></li>
-              <li><a href="#process" className="hover:text-emerald-600 transition-colors">Engineering Process</a></li>
-              <li><a href="#projects" className="hover:text-emerald-600 transition-colors">Solar Projects in Jaipur</a></li>
-              <li><a href="#contact" className="hover:text-emerald-600 transition-colors">Get a Site Audit</a></li>
+              <li><a href="/#solutions" className="hover:text-emerald-600 transition-colors">Our Solutions</a></li>
+              <li><a href="/#process" className="hover:text-emerald-600 transition-colors">Engineering Process</a></li>
+              <li><a href="/#projects" className="hover:text-emerald-600 transition-colors">Solar Projects</a></li>
+              <li><Link to="/contact" className="hover:text-emerald-600 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-6 text-[#1D1D1F]">Support & Legal</h4>
             <ul className="space-y-4 text-sm text-[#86868B]">
-              <li><a href="#" className="hover:text-emerald-600 transition-colors">Maintenance Support</a></li>
-              <li><a href="#" className="hover:text-emerald-600 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-emerald-600 transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-emerald-600 transition-colors">Sitemap</a></li>
+              <li><a href="tel:+919352513913" className="hover:text-emerald-600 transition-colors">+91 93525 13913</a></li>
+              <li><a href="mailto:info@greenworldbharatsolar.com" className="hover:text-emerald-600 transition-colors">Email Us</a></li>
+              <li><a href="/sitemap.xml" className="hover:text-emerald-600 transition-colors">Sitemap</a></li>
+              <li><a href="https://wa.me/919352513913" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 transition-colors">WhatsApp</a></li>
             </ul>
           </div>
         </div>

@@ -44,9 +44,10 @@ const MarqueeRow: React.FC<{ items: typeof TESTIMONIALS; direction: 'left' | 'ri
 };
 
 export const TestimonialsSection: React.FC = () => {
-    const chunk1 = TESTIMONIALS.slice(0, 33);
-    const chunk2 = TESTIMONIALS.slice(33, 66);
-    const chunk3 = TESTIMONIALS.slice(66, 100);
+    // Limit testimonials to reduce DOM elements and improve performance
+    const chunk1 = TESTIMONIALS.slice(0, 10);
+    const chunk2 = TESTIMONIALS.slice(10, 20);
+    const chunk3 = TESTIMONIALS.slice(20, 30);
 
     return (
         <section className="py-24 relative overflow-hidden bg-slate-50">
@@ -81,9 +82,9 @@ export const TestimonialsSection: React.FC = () => {
                 <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
                 <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
 
-                <MarqueeRow items={chunk1} direction="left" speed={120} />
-                <MarqueeRow items={chunk2} direction="right" speed={140} />
-                <MarqueeRow items={chunk3} direction="left" speed={130} />
+                <MarqueeRow items={chunk1} direction="left" speed={35} />
+                <MarqueeRow items={chunk2} direction="right" speed={40} />
+                <MarqueeRow items={chunk3} direction="left" speed={38} />
             </div>
 
             <div className="mt-16 text-center">

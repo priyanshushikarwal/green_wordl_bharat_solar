@@ -29,7 +29,7 @@ export const SubsidiesSection: React.FC = () => {
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 relative z-10">
                             <div>
                                 <h3 className="text-3xl font-bold mb-2">PM Surya Ghar: Muft Bijli Yojana</h3>
-                                <p className="text-gray-400">Central Government Subsidy Scheme 2024-25</p>
+                                <p className="text-gray-400">Central Government Subsidy Scheme 2026-27</p>
                             </div>
                             <div className="mt-4 md:mt-0 bg-yellow-500/20 border border-yellow-500/50 px-6 py-2 rounded-full text-yellow-400 font-bold text-sm uppercase tracking-wider">
                                 Most Popular
